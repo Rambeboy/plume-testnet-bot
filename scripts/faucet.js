@@ -5,13 +5,13 @@ const {
   displayHeader,
   logSuccess,
   logError,
-} = require('../src/utils/utils');
-const { createWallet, getAddress } = require('../src/utils/wallet');
+} = require('../app/src/utils/utils');
+const { createWallet, getAddress } = require('../app/src/utils/wallet');
 const {
   provider,
   PRIVATE_KEY,
   CONTRACT_ADDRESS,
-} = require('../src/utils/config');
+} = require('../app/src/utils/config');
 
 (async () => {
   displayHeader();
