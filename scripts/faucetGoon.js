@@ -1,12 +1,12 @@
 require('colors');
 const { ethers } = require('ethers');
-const { PRIVATE_KEY, provider } = require('../src/utils/config');
+const { PRIVATE_KEY, provider } = require('../app/src/utils/config');
 const { default: axios } = require('axios');
 const moment = require('moment');
 
-const { GOON_ABI } = require('../src/ABI/goonAbi');
-const { displayHeader, delay } = require('../src/utils/utils');
-const { PLUME_ABI } = require('../src/ABI/abi');
+const { GOON_ABI } = require('../app/src/ABI/goonAbi');
+const { displayHeader, delay } = require('../app/src/utils/utils');
+const { PLUME_ABI } = require('../app/src/ABI/abi');
 
 const IMPLEMENTATION_CA = PLUME_ABI.at(-1).IMPLEMENTATION_CA;
 const PROXY_CA = PLUME_ABI.at(-1).CA;
