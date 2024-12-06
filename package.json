@@ -17,11 +17,10 @@
   "keywords": [
     "plume",
     "testnet",
-    "airdrop" 
+    "airdrop",
     "network",
-    "bot",
     "rambeboy"
-    ],
+  ],
   "author": "Rambeboy",
   "license": "ISC",
   "dependencies": {
