@@ -4,11 +4,11 @@ const moment = require('moment');
 const readlineSync = require('readline-sync');
 const { CronJob } = require('cron');
 
-const { provider } = require('../src/utils/config');
-const { STAKE_ABI, STAKE_UTILS } = require('../src/ABI/stakeAbi');
-const { displayHeader } = require('../src/utils/utils');
-const { createWallet } = require('../src/utils/wallet');
-const { ERC20_ABI } = require('../src/ABI/ercAbi');
+const { provider } = require('../app/src/utils/config');
+const { STAKE_ABI, STAKE_UTILS } = require('../app/src/ABI/stakeAbi');
+const { displayHeader } = require('../app/src/utils/utils');
+const { createWallet } = require('../app/src/utils/wallet');
+const { ERC20_ABI } = require('../app/src/ABI/ercAbi');
 
 const IMPLEMENTATION_CA = STAKE_UTILS.implementationContractAddress;
 const CA = STAKE_UTILS.contractAddress;
