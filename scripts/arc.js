@@ -5,9 +5,9 @@ const { ethers } = require('ethers');
 const readlineSync = require('readline-sync');
 const { CronJob } = require('cron');
 
-const { provider } = require('../src/utils/config');
-const { ARC_ABI, ARC_UTILS } = require('../src/ABI/arcAbi');
-const { displayHeader } = require('../src/utils/utils');
+const { provider } = require('../app/src/utils/config');
+const { ARC_ABI, ARC_UTILS } = require('../app/src/ABI/arcAbi');
+const { displayHeader } = require('../app/src/utils/utils');
 
 const PROXY_CONTRACT_ADDRESS = ARC_UTILS.PROXY_CA;
 const IMPLEMENTATION_CONTRACT_ADDRESS = ARC_UTILS.IMPLEMENTATION_CA;
