@@ -7,9 +7,9 @@ const moment = require('moment');
 const readlineSync = require('readline-sync');
 
 const { Wallet } = require('ethers');
-const { provider } = require('../src/utils/config');
-const { CHECKIN_ABI } = require('../src/ABI/checkinAbi');
-const { displayHeader } = require('../src/utils/utils');
+const { provider } = require('../app/src/utils/config');
+const { CHECKIN_ABI } = require('../app/src/ABI/checkinAbi');
+const { displayHeader } = require('../app/src/utils/utils');
 
 const CONTRACT = CHECKIN_ABI.at(-1).CA;
 const PRIVATE_KEYS = JSON.parse(fs.readFileSync('privateKeys.json', 'utf-8'));
