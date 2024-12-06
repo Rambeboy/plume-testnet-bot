@@ -5,10 +5,10 @@ const moment = require('moment');
 const fs = require('fs');
 const cron = require('cron');
 
-const { provider } = require('../src/utils/config');
-const { PREDICT_ABI } = require('../src/ABI/predictAbi');
-const { PREDICT_PAIR, PREDICT_CONTRACT } = require('../src/utils/pairIndex');
-const { displayHeader, filterPairsByType } = require('../src/utils/utils');
+const { provider } = require('../app/src/utils/config');
+const { PREDICT_ABI } = require('../app/src/ABI/predictAbi');
+const { PREDICT_PAIR, PREDICT_CONTRACT } = require('../app/src/utils/pairIndex');
+const { displayHeader, filterPairsByType } = require('../app/src/utils/utils');
 
 const IMPLEMENTATION_CA = PREDICT_CONTRACT.implementation;
 const PARENT_CA = PREDICT_CONTRACT.proxy;
